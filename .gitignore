@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------
+# Build output
+# ---------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+*.log
+
+# Folder published by docker/build-and-run.ps1 (the image is rebuilt from it)
+docker/publish/
+
+# ---------------------------------------------------------------
+# IDE and user-specific files
+# ---------------------------------------------------------------
+# Visual Studio (also holds the IIS Express applicationhost.config)
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# VS Code / Rider / ReSharper
+.vscode/
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+# Publish profile secrets (the .pubxml itself can be committed)
+*.pubxml.user
+
+# ---------------------------------------------------------------
+# Tests
+# ---------------------------------------------------------------
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# ---------------------------------------------------------------
+# OS files
+# ---------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------
+# Documents that are not part of the code (e.g. the test statement)
+# ---------------------------------------------------------------
+*.pdf
+
+# NOTE: packages/ is committed on purpose. A cloned repository builds, runs and can be
+# debugged even if a package stops being available online or there is no internet.
+# nuget.config lets you restore or update packages when needed.
