@@ -1,0 +1,18 @@
+# How to RUN the app (the Dockerfile says how to BUILD it).
+# Requires Docker Desktop in "Windows containers" mode.
+#
+#   docker compose -f docker/docker-compose.yml up -d --build    # build + start
+#   docker compose -f docker/docker-compose.yml down             # stop + remove
+#
+# Change the host port with the HOST_PORT variable (default 8080).
+
+services:
+  salary-mvc:
+    build:
+      context: ..                    # repository root: the whole solution is compiled inside the image
+      dockerfile: docker/Dockerfile
+    image: salary-mvc:local
+    container_name: salary-mvc
+    ports:
+      - "${HOST_PORT:-8080}:80"      # host port -> IIS inside the container
+    restart: unless-stopped

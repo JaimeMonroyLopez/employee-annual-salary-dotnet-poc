@@ -1,0 +1,19 @@
+# What Docker does NOT copy into the build context (the context is the repository root).
+# Keeps the build fast and keeps local or personal files out of the image.
+
+# Build output (the image compiles everything itself)
+**/[Bb]in/
+**/[Oo]bj/
+docker/publish/
+
+# Source control and IDE / user files
+.git/
+.gitignore
+.vs/
+.vscode/
+.idea/
+**/*.user
+**/*.suo
+
+# Documents that are not part of the code
+*.pdf
