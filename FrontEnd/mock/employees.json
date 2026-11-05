@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Juan",
+    "contractTypeName": "HourlySalaryEmployee",
+    "roleId": 1,
+    "roleName": "Administrator",
+    "roleDescription": null,
+    "hourlySalary": 60000.0,
+    "monthlySalary": 80000.0
+  },
+  {
+    "id": 2,
+    "name": "Sebastian",
+    "contractTypeName": "MonthlySalaryEmployee",
+    "roleId": 2,
+    "roleName": "Contractor",
+    "roleDescription": null,
+    "hourlySalary": 60000.0,
+    "monthlySalary": 80000.0
+  },
+  {
+    "id": 3,
+    "name": "Laura",
+    "contractTypeName": "HourlySalaryEmployee",
+    "roleId": 2,
+    "roleName": "Contractor",
+    "roleDescription": null,
+    "hourlySalary": 45000.0,
+    "monthlySalary": 0.0
+  },
+  {
+    "id": 4,
+    "name": "Camila",
+    "contractTypeName": "MonthlySalaryEmployee",
+    "roleId": 1,
+    "roleName": "Administrator",
+    "roleDescription": null,
+    "hourlySalary": 0.0,
+    "monthlySalary": 95000.0
+  }
+]

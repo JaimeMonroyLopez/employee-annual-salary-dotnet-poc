@@ -41,6 +41,12 @@
     }
 
 </script>
+<div class="alert alert-info" role="alert" style="margin-top: 20px;">
+    <strong>Valid data</strong><br />
+    The @System.Configuration.ConfigurationManager.AppSettings["CompanyName"] employees API is not available, so this demo reads the employees from a local mock:
+    <a href="~/mock/employees.json" target="_blank">mock/employees.json</a>.<br />
+    Valid Employee IDs: <strong>1, 2, 3, 4</strong>. Leave the field empty (or type 0) to list every employee.
+</div>
 @using (Html.BeginForm("GetEmployee", "Home", FormMethod.Post, new { enctype = "multipart/form-data", onsubmit = "return ValidateForm(document.getElementById('id').value);" }))
 {
 

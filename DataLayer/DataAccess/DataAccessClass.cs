@@ -14,7 +14,9 @@ namespace DataAccess
 {
     public class DataAccessClass
     {
-        private static string EmployeeAPIurl= "http://masglobaltestapi.azurewebsites.net/api/Employees";
+        // The external employees API is not available: the URL comes from the configuration
+        // (appSettings "EmployeesApiUrl" in Web.config), which currently points to the local mock mock/employees.json.
+        private static string EmployeeAPIurl = ConfigurationManager.AppSettings["EmployeesApiUrl"];
 
         HttpClient testAPIclient = new HttpClient();
         public List<EmployeeDTO> ConsumeEmployeesTestAPI()
